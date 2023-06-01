@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class RootController {
-    @GetMapping
-    public String root(){
+    @GetMapping("/")
+    public String getRoot(){
         return "Auto Code Deployment with Github actions done";
     }
 }
